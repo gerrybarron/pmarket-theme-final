@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Pmarket_ScrollToTop::view" title="Pmarket" module="Pmarket_ScrollToTop" sortOrder="65" resource="Pmarket_ScrollToTop::view" />
+        <add id="Pmarket_ScrollToTop::extension" title="Scroll to Top" module="Pmarket_ScrollToTop" sortOrder="10" parent="Pmarket_ScrollToTop::view" resource="Pmarket_ScrollToTop::extension" />
+        <add id="Pmarket_ScrollToTop::scrolltotop" title="Configuration" module="Pmarket_ScrollToTop" sortOrder="120" parent="Pmarket_ScrollToTop::extension" action="adminhtml/system_config/edit/section/scrollsection" resource="Pmarket_ScrollToTop::scrolltotop"/>
+    </menu>
+</config>

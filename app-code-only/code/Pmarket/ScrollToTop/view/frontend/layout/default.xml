@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--To include blocks in left & right columns-->
+    <head>
+        <css src="Pmarket_ScrollToTop::css/scroll.css"/>
+        <script src="Pmarket_ScrollToTop::js/scroll.js" />
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Pmarket\ScrollToTop\Block\ScrollToTop" name="scrolltotop" template="Pmarket_ScrollToTop::scroll.phtml" ifconfig="scrollsection/scrollgroup/active" />
+        </referenceContainer>
+    </body>
+</page>
